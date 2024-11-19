@@ -37,7 +37,7 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
-            """
+        """
         Get Page Docs
         """
         assert isinstance(page, int) and page > 0
