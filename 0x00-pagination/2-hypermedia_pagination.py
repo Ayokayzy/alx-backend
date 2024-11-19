@@ -52,11 +52,10 @@ class Server:
 
         return dataset[start_index:end_index]
 
-    def get_hyper(self, int = 1, page_size = 10) -> dict:
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
         """
         Function Docs
         """
-
         page_data = self.get_page(page, page_size)
         total_pages = math.ceil(len(self.dataset()) / page_size)
 
